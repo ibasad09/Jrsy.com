@@ -1,0 +1,98 @@
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box
+       }
+       .primary-navigation{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        --flex-gap: 3rem;
+        
+    }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color:rgba(0,0,0,0.4);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .login{
+            border: 1px solid black;
+            width: 400px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.75);
+            overflow: hidden;
+           
+        }
+        form{
+            display: block;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(40%);
+            flex-direction: column;
+            display: flex;
+            gap: 5px;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 24px;
+            text-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+            margin-bottom: 60px;
+            font-family: Arial;
+        }
+        label{
+            color: rgb(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+        }
+        input{
+            background: rgb(255, 255, 255, 0.3);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            padding: 0px 20px;
+            border: none;
+            margin-bottom: 20px;
+            color: white;
+        }
+        button{
+            background: rgb(216, 46, 202);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px;
+            border: none;
+            margin: 10px 10px;
+            box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.3);
+            color: white;
+        }
+        .login button:hover{
+            background-color: rgb(13, 145, 145);
+        }
+        .background-clip{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        @media (min-aspect-ratio:16/9) {
+            .background-clip{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio:16/9) {
+            .background-clip{
+                width: 100%;
+                height: auto;
+            }
+        }
